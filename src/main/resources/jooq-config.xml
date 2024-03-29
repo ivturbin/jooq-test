@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration xmlns="http://www.jooq.org/xsd/jooq-codegen-3.13.0.xsd">
+
+    <jdbc>
+        <driver>org.postgresql.Driver</driver>
+        <url>jdbc:postgresql://10.125.29.220:5432/db04</url>
+        <user>psint</user>
+        <password>psint-psint</password>
+    </jdbc>
+
+    <generator>
+        <name>org.jooq.codegen.JavaGenerator</name>
+
+        <database>
+            <name>org.jooq.meta.postgres.PostgresDatabase</name>
+            <inputSchema>passport_international</inputSchema>
+            <includes>.*</includes>
+            <excludes></excludes>
+        </database>
+
+        <target>
+            <packageName>dev.turbin.jooqtest.jooq</packageName>
+            <directory>C:/Users/Ivan/IdeaProjects/jooq-test/src/main/java/</directory>
+        </target>
+    </generator>
+</configuration>
